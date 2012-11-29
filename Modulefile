@@ -1,5 +1,5 @@
 name    '9minutesnooze-borg'
-version '0.0.5'
+version '0.0.6'
 source 'UNKNOWN'
 author '9minutesnooze'
 license 'Apache License, Version 2.0'
@@ -8,5 +8,4 @@ description 'UNKNOWN'
 project_page 'UNKNOWN'
 
 ## Add dependencies, if any:
-dependency 'thias/bind'
 #dependency 'puppetlabs/dhcp'
