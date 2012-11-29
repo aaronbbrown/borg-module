@@ -1,5 +1,5 @@
 name    '9minutesnooze-borg'
-version '0.0.1'
+version '0.0.2'
 source 'UNKNOWN'
 author '9minutesnooze'
 license 'Apache License, Version 2.0'
