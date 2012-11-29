@@ -1,5 +1,5 @@
-class borg::dhcp {
-  class { '::dhcp' :
+class borg::dhcp_server {
+  class { 'dhcp' :
     dnsdomain   => ['borg.lan'],
     interfaces  => ['eth0'],
     nameservers => ['192.168.1.4',
@@ -8,14 +8,14 @@ class borg::dhcp {
     ntpservers  => ['us.pool.ntp.org'],
   }
 
-  ::dhcp::pool { 'borg.lan' :
+  dhcp::pool { 'borg.lan' :
     network => '192.168.1.0',
     mask    => '255.255.255.0',
     range   => ['192.168.1.151 192.168.1.200'],
     gateway => '192.168.1.1',
   }
 
-  ::dhcp::host {
+  dhcp::host {
     'helo.borg.lan' : 
       mac => '00:16:CB:05:2C:53',
       ip  => 'helo.borg.lan';
