@@ -2,9 +2,7 @@ class borg::dhcp_server {
   class { 'dhcp' :
     dnsdomain   => ['borg.lan'],
     interfaces  => ['eth0'],
-    nameservers => ['192.168.1.4',
-                    '8.8.8.8',
-                    '8.8.4.4'],
+    nameservers => ['192.168.1.5'],
     ntpservers  => ['us.pool.ntp.org'],
   }
 
