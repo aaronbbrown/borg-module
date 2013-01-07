@@ -22,6 +22,7 @@ class borg::bind_server::borg_lan {
     'router2'    : data => '192.168.1.3';
     'tigh'       : data => '192.168.1.4';
     'ns1'        : data => '192.168.1.4';
+    'zarek'      : data => '192.168.1.5';
     'helo'       : data => '192.168.1.10';
     'anders'     : data => '192.168.1.12';
     'anders-wifi': data => '192.168.1.13';
@@ -69,7 +70,8 @@ class borg::bind_server::9minutesnooze {
       'www',
       'cam',
       'static',
-      'gallery' ] : data => '@'; 
+      'gallery',
+      'nn' ]  : data => '@'; 
 
     'home'    : data => 'locutus.borg.lan';
     'sabnzbd' : data => 'tigh.borg.lan';
