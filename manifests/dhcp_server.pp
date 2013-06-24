@@ -38,6 +38,14 @@ class borg::dhcp_server {
       mac => '28:cf:da:ec:4a:dc',
       ip  => 'boomer-wifi.borg.lan';
 
+    'tbolt.borg.lan' :
+      mac => '10:dd:b1:b0:3a:f7',
+      ip  => 'tbolt.borg.lan'; 
+
+    'cavil.borg.lan' :
+      mac => '14:10:9f:df:15:c3',
+      ip  => 'cavil.borg.lan';
+
     'cam.borg.lan' :
       mac => '00:22:c0:00:08:8e',
       ip  => 'cam.borg.lan';

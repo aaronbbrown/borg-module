@@ -30,6 +30,8 @@ class borg::bind_server::borg_lan {
     'boomer'     : data => '192.168.1.30';
     'boomer-wifi': data => '192.168.1.31';
     'cam'        : data => '192.168.1.32';
+    'cavil'      : data => '192.168.1.33';
+    'tbolt'      : data => '192.168.1.34';
     'wap1'       : data => '192.168.1.101';
   }
 
@@ -37,6 +39,7 @@ class borg::bind_server::borg_lan {
     'deb'   : data => "locutus.${domain}";
     'tv'    : data => "tigh.${domain}";
     'sb'    : data => "tigh.${domain}";
+    'cp'    : data => "tigh.${domain}";
     'remote': data => "tigh.${domain}";
     'puppet': data => "locutus.${domain}";
     'wap'   : data => "wap1.${domain}";
@@ -70,11 +73,11 @@ class borg::bind_server::9minutesnooze {
       'www',
       'cam',
       'static',
-      'gallery',
-      'nn' ]  : data => '@'; 
+      'gallery' ] : data => '@'; 
 
     'home'    : data => 'locutus.borg.lan';
-    'sabnzbd' : data => 'tigh.borg.lan';
+    ['nn','sabnzbd','q'] :
+      data => 'tigh.borg.lan';
     's-blog'  : data => 'd2nn4xotbgolll.cloudfront.net';
     "puppet-${domain}": 
       host  => 'puppet',
