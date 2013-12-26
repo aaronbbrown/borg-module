@@ -53,5 +53,9 @@ class borg::dhcp_server {
     'wap.borg.lan' :
       mac => '28:94:0f:79:d0:34',
       ip  => 'wap.borg.lan';
+
+    'sol.borg.lan' :
+      mac => 'f8:2f:5b:00:23:0c',
+      ip  => 'sol.borg.lan';
   }
 }

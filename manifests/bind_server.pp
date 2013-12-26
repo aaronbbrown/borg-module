@@ -23,6 +23,7 @@ class borg::bind_server::borg_lan {
     'tigh'       : data => '192.168.1.4';
     'ns1'        : data => '192.168.1.4';
     'zarek'      : data => '192.168.1.5';
+    'leoben'     : data => '192.168.1.6';
     'helo'       : data => '192.168.1.10';
     'anders'     : data => '192.168.1.12';
     'anders-wifi': data => '192.168.1.13';
@@ -32,6 +33,7 @@ class borg::bind_server::borg_lan {
     'cam'        : data => '192.168.1.32';
     'cavil'      : data => '192.168.1.33';
     'tbolt'      : data => '192.168.1.34';
+    'sol'        : data => '192.168.1.35';
     'wap1'       : data => '192.168.1.101';
   }
 
