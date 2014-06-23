@@ -34,6 +34,7 @@ class borg::bind_server::borg_lan {
     'cavil'      : data => '192.168.1.33';
     'tbolt'      : data => '192.168.1.34';
     'sol'        : data => '192.168.1.35';
+    'printer'    : data => '192.168.1.36';
     'wap1'       : data => '192.168.1.101';
   }
 
@@ -63,19 +64,25 @@ class borg::bind_server::9minutesnooze {
     data => 'aspmx.l.google.com' 
   }
 
-  dns::record::a { "at-${domain}" : 
-    host => '@',
-    data => '184.72.216.104';
+  dns::record::a { 
+    "at-${domain}" : 
+      host => '@',
+      data => '184.72.216.104';
+
+    'do' : data => '162.243.15.236';
   }
 
+
   dns::record::cname {
-    [ 'blog',
-      'ec2',
+    [ 'ec2',
       'git',
       'www',
       'cam',
       'static',
       'gallery' ] : data => '@'; 
+
+    ['blog','gitlab'] : 
+      data => 'do.9minutesnooze.com';
 
     'home'    : data => 'locutus.borg.lan';
     ['nn','sabnzbd','q'] :

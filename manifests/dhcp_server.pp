@@ -57,5 +57,14 @@ class borg::dhcp_server {
     'sol.borg.lan' :
       mac => 'f8:2f:5b:00:23:0c',
       ip  => 'sol.borg.lan';
+
+    'leoben.borg.lan' :
+      mac => '9c:eb:e8:06:19:7b',
+      ip  => 'leoben.borg.lan';
+
+    'printer.borg.lan' :
+      mac => 'FC:15:B4:A0:98:62',
+      ip  => 'printer.borg.lan';
+
   }
 }
